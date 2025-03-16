@@ -1,10 +1,26 @@
+# Node dependencies
 node_modules
-credentials/
-backend/credentials/
-backup/backend/credentials/
-.env
-backend/.env
-backup/backend/.env
+
+# Only exclude binary tokens
 *.pickle
 token.pickle
 backend/token.pickle
+
+# Exclude sensitive environment files
+# But we're now including the placeholder .env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Keep track of logs but not their content
+logs/*
+!logs/.gitkeep
+
+# Exclude any backup files that may contain sensitive data
+backup/
+
+# Python virtual environment
+venv/
+__pycache__/
+*.py[cod]
