@@ -1,0 +1,10 @@
+node_modules
+credentials/
+backend/credentials/
+backup/backend/credentials/
+.env
+backend/.env
+backup/backend/.env
+*.pickle
+token.pickle
+backend/token.pickle

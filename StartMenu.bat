@@ -1,0 +1,3 @@
+@echo off
+echo Starting Google Forms Creation System...
+powershell -NoExit -ExecutionPolicy Bypass -File "%~dp0start.ps1" 
